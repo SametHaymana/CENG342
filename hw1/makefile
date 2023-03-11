@@ -3,14 +3,14 @@ pp= python3
 DEPS = src/hellomake.h
 
 
-install: src/hellomake.c src/hellofunc.c
+install: src/hellomake.c src/19050111068.c
 	rm -rf build
 	mkdir build
-	$(complier) -o build/hellomake src/hellomake.c src/hellofunc.c -I.
+	$(complier) -o build/main src/hellomake.c src/19050111068.c -I.
 
 
-start:	build/hellomake
-	build/hellomake
+start:	build/main
+	build/main
 
 
 clean:
